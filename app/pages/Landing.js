@@ -7,8 +7,10 @@ import EcoFeatLogo from '../components/EcoFeatLogo'
 
 const Landing = () => {
 
-  
+
   return (
+
+    
     <View style={Style.container}>
       <View style={Style.main}>
         <Text>Image</Text>
