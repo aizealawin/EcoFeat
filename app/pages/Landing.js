@@ -1,14 +1,25 @@
-import { Text, View } from 'react-native'
-import React, { Component } from 'react'
+import { View, Text } from 'react-native'
+import { Link } from 'expo-router'
+import React from 'react'
+import Style from '../Style'
+import EcoFeatLogo from '../components/EcoFeatLogo'
 
-export class Landing extends Component {
-  render() {
-    return (
-      <View>
-        <Text>Landing</Text>
+
+const Landing = () => {
+
+  
+  return (
+    <View style={Style.container}>
+      <View style={Style.main}>
+        <Text>Image</Text>
+        <Text>First, we are going to ask you a few simple questions about your living situation...</Text>
+        <Link href=''>
+          <Text>-&gt;</Text>
+        </Link>
       </View>
-    )
-  }
+    </View>
+  )
 }
 
 export default Landing
+
