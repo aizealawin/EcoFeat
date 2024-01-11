@@ -72,7 +72,6 @@ const Landing = () => {
 
 
   return (
-
     
     <View style={Style.container}>
       <View style={Style.main}>
