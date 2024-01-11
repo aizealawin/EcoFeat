@@ -1,11 +1,16 @@
 import { StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
 
 export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>Hello World</Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
+        <Text style={styles.subtitle}>EcoFeat</Text>
+        <Text style={styles.subtitle}>EcoFeat Logo</Text>
+        <Link href="/pages/landing">
+          <Text style={styles.title}>Explore -&gt;</Text>
+        </Link>
+        <Text style={styles.content}>Already have an account? <Text style={styles.boldLink}>Sign in</Text></Text>
       </View>
     </View>
   );
@@ -31,4 +36,11 @@ const styles = StyleSheet.create({
     fontSize: 36,
     color: "#38434D",
   },
+  content: {
+    fontSize: 20
+  },
+  boldLink: {
+    fontWeight: "bold",
+    textDecorationLine: "underline"
+  }
 });
